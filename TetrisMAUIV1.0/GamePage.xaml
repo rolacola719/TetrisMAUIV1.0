@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TetrisMAUIV1._0.GamePage"
+             >
+    
+    
+    <Grid BackgroundColor="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <VerticalStackLayout Grid.Column="0">
+            
+            <Label Text="Score: " FontSize="Large" TextColor="White"/>
+            <Label x:Name="ScoreLabel" FontSize="Large" TextColor="White"/>
+
+        </VerticalStackLayout>
+        
+        <StackLayout x:Name ="Frame" Grid.Column="1">
+        </StackLayout>
+
+        <StackLayout Grid.Column="2" VerticalOptions="Center" WidthRequest="300" HorizontalOptions="StartAndExpand">
+            <Label Text="Upcoming:" FontSize="Small" TextColor="White"/>
+            <Grid x:Name="UpcomingPiece1Grid" Margin="30, 30, 30 , 30" HorizontalOptions="Start" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <Grid x:Name="UpcomingPiece2Grid" Margin="30, 30, 30 , 30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <Grid x:Name="UpcomingPiece3Grid" Margin="30, 30, 30 , 30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="10"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
+                    
+                </Grid.ColumnDefinitions>
+
+                
+            </Grid>
+
+
+        </StackLayout>
+    </Grid>
+    
+
+    
+</ContentPage>
